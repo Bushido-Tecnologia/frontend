@@ -1,0 +1,35 @@
+.buttonTransparent {
+    border: none;
+    border-radius: var(--border-radius-button);
+
+    padding: var(--padding-button);
+    margin-top: 1em;
+
+    color: white;
+    background: rgb(187, 115, 63);
+    background: -moz-linear-gradient(90deg, rgba(187, 115, 63, 0.8015581232492998) 49%, rgba(247, 152, 41, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(187, 115, 63, 0.8015581232492998) 49%, rgba(247, 152, 41, 1) 100%);
+    background: linear-gradient(90deg, rgba(187, 115, 63, 0.8015581232492998) 49%, rgba(247, 152, 41, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bb733f", endColorstr="#f79829", GradientType=1);
+
+    font-size: var(--font-size-small);
+    font-weight: 700;
+
+    width: max-content;
+}
+
+.button {
+    border: none;
+    border-radius: var(--border-radius-button);
+    
+    padding: var(--padding-button);
+    margin-top: 1em;
+
+    color: white;
+    background-color: var(--primary-color);
+
+    font-size: var(--font-size-small);
+    font-weight: 700;
+
+    width: max-content;
+}
