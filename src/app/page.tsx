@@ -42,18 +42,16 @@ const Home = () => {
         </div>
       </div>
 
+      <Title text="Missões" />
       <div className={home.home__missions}>
-        <Title text="Missões" />
-
         <Mission text="Afastar as crianças e jovens do caminho das drogas e da violência através do esporte e da cultura." />
         <Mission text="Fomentar a prática do esporte, para prevenção de doenças causadas pela vida sedentária." />
         <Mission text="Contribuir no combate das doenças emocionais através de atividades físicas." />
 
       </div>
 
+      <Title text="Objetivo" />
       <div className={home.home__objective}>
-        <Title text="Objetivo" />
-
         <p className={home.home__objective__text}>
           Proporcionar uma vida saudável com interação socioeconômica das diversas camadas sociais, além disso, combater qualquer tipo de preconceito, seja na sociedade ou na comunidade e no combate e prevenção as doenças causadas pelo sedentarismo
         </p>
@@ -68,13 +66,13 @@ const Home = () => {
         </div>
 
         <div className={home.home__goals__goal}>
-          <h5 className={home.home__goals__goal__data}>200 +</h5>
-          <h6 className={home.home__goals__goal__description}>Jovens e crianças para alcançar no ano</h6>
+          <h5 className={home.home__goals__goal__data}>R$700.000</h5>
+          <h6 className={home.home__goals__goal__description}>Arrecadados no ano</h6>
         </div>
 
         <div className={home.home__goals__goal}>
-          <h5 className={home.home__goals__goal__data}>200 +</h5>
-          <h6 className={home.home__goals__goal__description}>Jovens e crianças para alcançar no ano</h6>
+          <h5 className={home.home__goals__goal__data}>x%</h5>
+          <h6 className={home.home__goals__goal__description}>De metas alcançadas</h6>
         </div>
       </div>
     </main>
