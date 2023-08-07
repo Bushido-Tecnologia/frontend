@@ -58,6 +58,25 @@ const Home = () => {
           Proporcionar uma vida saudável com interação socioeconômica das diversas camadas sociais, além disso, combater qualquer tipo de preconceito, seja na sociedade ou na comunidade e no combate e prevenção as doenças causadas pelo sedentarismo
         </p>
       </div>
+
+      <Title text="Nossas Metas" />
+      <div className={home.home__goals}>
+
+        <div className={home.home__goals__goal}>
+          <h5 className={home.home__goals__goal__data}>200 +</h5>
+          <h6 className={home.home__goals__goal__description}>Jovens e crianças para alcançar no ano</h6>
+        </div>
+
+        <div className={home.home__goals__goal}>
+          <h5 className={home.home__goals__goal__data}>200 +</h5>
+          <h6 className={home.home__goals__goal__description}>Jovens e crianças para alcançar no ano</h6>
+        </div>
+
+        <div className={home.home__goals__goal}>
+          <h5 className={home.home__goals__goal__data}>200 +</h5>
+          <h6 className={home.home__goals__goal__description}>Jovens e crianças para alcançar no ano</h6>
+        </div>
+      </div>
     </main>
   )
 }

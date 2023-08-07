@@ -108,19 +108,54 @@
     flex-direction: column;
     align-items: center;
     gap: 3em;
-    
+
     margin-top: 5em;
 }
 
 .home__objective__text {
     font-size: var(--font-size-small);
     text-align: center;
-    
+
     width: 85%;
     max-width: 750px;
 }
 
+/*
+    ===================================== GOALS SECTION =====================================
+*/
+
+.home__goals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+
+    margin-top: 2rem;
+}
+
+.home__goals__goal {
+    width: 85%;
+}
+
+.home__goals__goal__data {
+    color: var(--primary-color);
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+.home__goals__goal__description {
+    font-size: var(--font-size-small);
+    text-align: center;
+
+    width: 85%;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 1023px) {
+    /*
+        ===================================== INITIAL SECTION =====================================
+    */
+
     .home__init__content {
         align-items: center;
     }
@@ -133,27 +168,45 @@
         text-align: center;
     }
 
+    /*
+        ===================================== INTRODUCTION SECTION =====================================
+    */
+    
     .home__introduction {
         flex-direction: row;
         justify-content: space-around;
         align-items: start;
     }
-
+    
     .home__introduction__description {
         display: flex;
         flex-direction: column;
         align-items: end;
-
+        
         width: 50%;
         max-width: none;
     }
-
+    
     .home__introduction__description__title {
         text-align: end;
     }
-
+    
     .home__introduction__description__text {
         width: 75%;
         text-align: end;
+    }
+    
+    /*
+        ===================================== GOALS SECTION =====================================
+    */
+
+    .home__goals {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2em;
+    }
+
+    .home__goals__goal {
+        width: 33%;
     }
 }
