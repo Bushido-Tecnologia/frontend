@@ -7,7 +7,8 @@ body {
 
 :root {
     --primary-color: #BB733F;
-    --font-size-large: 3.5rem;
+    --font-size-very-large: 3.5rem;
+    --font-size-large: 2.5rem;
     --font-size-medium: 2rem;
     --font-size-small: 1rem;
     --font-size-very-small: 0.8rem;
@@ -17,9 +18,10 @@ body {
 
     @media screen and (min-width: 767px) {
     :root {
-        --font-size-large: 5rem;
+        --font-size-very-large: 5rem;
+        --font-size-large: 3.2rem;
         --font-size-medium: 2.5rem;
-        --font-size-small: 1rem;
+        --font-size-small: 1.2rem;
         --font-size-very-small: 0.8rem;
     }
 }
