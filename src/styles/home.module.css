@@ -149,6 +149,46 @@
     margin: 0 auto;
 }
 
+/*
+    ===================================== PARTNERS SECTION =====================================
+*/
+
+.home__partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+.home__partners__partner {
+    width: 85%;
+    max-width: 250px;
+    height: auto;
+}
+
+.home__partners__partner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 767px) {
+    /*
+        ===================================== PARTNERS SECTION =====================================
+    */
+
+    .home__partners {
+        justify-content: space-between;
+        padding: 0 2em;
+    }
+
+    .home__partners__partner {
+        width: 15%;
+        max-width: none;
+        height: auto;
+    }
+}
+
 @media screen and (min-width: 1023px) {
     /*
         ===================================== INITIAL SECTION =====================================
@@ -169,31 +209,31 @@
     /*
         ===================================== INTRODUCTION SECTION =====================================
     */
-    
+
     .home__introduction {
         flex-direction: row;
         justify-content: space-around;
         align-items: start;
     }
-    
+
     .home__introduction__description {
         display: flex;
         flex-direction: column;
         align-items: end;
-        
+
         width: 50%;
         max-width: none;
     }
-    
+
     .home__introduction__description__title {
         text-align: end;
     }
-    
+
     .home__introduction__description__text {
         width: 75%;
         text-align: end;
     }
-    
+
     /*
         ===================================== GOALS SECTION =====================================
     */

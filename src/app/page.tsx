@@ -3,6 +3,11 @@ import Image from "next/image"
 
 import banner from "../assets/img/banner_home.png"
 import introductoryImage from "../assets/img/introductory_section_image.png"
+import partner1 from "../assets/img/partners/partners1.png"
+import partner2 from "../assets/img/partners/partners2.png"
+import partner3 from "../assets/img/partners/partners3.png"
+import partner4 from "../assets/img/partners/partners4.png"
+import partner5 from "../assets/img/partners/partners5.png"
 
 import { Button } from "@/components/Button"
 import { Title } from "@/components/Title"
@@ -75,6 +80,30 @@ const Home = () => {
           <h6 className={home.home__goals__goal__description}>De metas alcançadas</h6>
         </div>
       </div>
+
+      <Title text="Nossos Parceiros" />
+      <div className={home.home__partners}>
+        <div className={home.home__partners__partner}>
+          <Image src={partner1} alt="" />
+        </div>
+
+        <div className={home.home__partners__partner}>
+          <Image src={partner2} alt="" />
+        </div>
+
+        <div className={home.home__partners__partner}>
+          <Image src={partner3} alt="" />
+        </div>
+
+        <div className={home.home__partners__partner}>
+          <Image src={partner4} alt="" />
+        </div>
+
+        <div className={home.home__partners__partner}>
+          <Image src={partner5} alt="" />
+        </div>
+      </div>
+      
     </main>
   )
 }
