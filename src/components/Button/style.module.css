@@ -1,6 +1,6 @@
 .buttonTransparent {
     border: none;
-    border-radius: var(--border-radius-button);
+    border-radius: var(--border-radius-medium);
 
     padding: var(--padding-button);
     margin-top: 1em;
@@ -20,7 +20,7 @@
 
 .button {
     border: none;
-    border-radius: var(--border-radius-button);
+    border-radius: var(--border-radius-medium);
     
     padding: var(--padding-button);
     margin-top: 1em;

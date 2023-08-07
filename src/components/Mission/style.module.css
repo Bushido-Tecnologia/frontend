@@ -1,0 +1,22 @@
+.mission {
+    border-radius: var(--border-radius-small);
+    
+    background-color: var(--primary-color);
+
+    width: 90%;
+    padding: 1.5em 1em;
+}
+
+.mission__content {
+    font-size: var(--font-size-small);
+    color: white;
+    text-align: center;
+    
+    margin: 0;
+}
+
+@media(min-widtH: 767px) {
+    .mission {
+        width: 25%;
+    }
+}
