@@ -96,16 +96,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1em;
+    gap: 3em;
 }
 
-.home__missions__title {
-    color: var(--primary-color);
-    font-size: var(--font-size-large);
-    text-align: center;
+/*
+    ===================================== OBJECTIVE SECTION =====================================
+*/
 
-    width: 100%;
-    margin-bottom: 1em;
+.home__objective {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    
+    margin-top: 5em;
+}
+
+.home__objective__text {
+    font-size: var(--font-size-small);
+    text-align: center;
+    
+    width: 85%;
+    max-width: 750px;
 }
 
 @media screen and (min-width: 1023px) {

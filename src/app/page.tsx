@@ -5,6 +5,7 @@ import banner from "../assets/img/banner_home.png"
 import introductoryImage from "../assets/img/introductory_section_image.png"
 
 import { Button } from "@/components/Button"
+import { Title } from "@/components/Title"
 import { Mission } from "@/components/Mission"
 
 const Home = () => {
@@ -42,12 +43,20 @@ const Home = () => {
       </div>
 
       <div className={home.home__missions}>
-        <h2 className={home.home__missions__title}>Missões</h2>
+        <Title text="Missões" />
 
         <Mission text="Afastar as crianças e jovens do caminho das drogas e da violência através do esporte e da cultura." />
         <Mission text="Fomentar a prática do esporte, para prevenção de doenças causadas pela vida sedentária." />
         <Mission text="Contribuir no combate das doenças emocionais através de atividades físicas." />
-        
+
+      </div>
+
+      <div className={home.home__objective}>
+        <Title text="Objetivo" />
+
+        <p className={home.home__objective__text}>
+          Proporcionar uma vida saudável com interação socioeconômica das diversas camadas sociais, além disso, combater qualquer tipo de preconceito, seja na sociedade ou na comunidade e no combate e prevenção as doenças causadas pelo sedentarismo
+        </p>
       </div>
     </main>
   )
