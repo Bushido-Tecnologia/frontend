@@ -7,12 +7,14 @@ body {
 
 :root {
     --primary-color: #BB733F;
+    --secondary-color: #eeceb6;
     --font-size-very-large: 3.5rem;
     --font-size-large: 2.5rem;
     --font-size-medium: 2rem;
     --font-size-small: 1.1rem;
     --font-size-very-small: 0.8rem;
     --border-radius-medium: 12px;
+    --border-radius-large: 30px;
     --border-radius-small: 5px;
     --padding-button: 20px 35px;
 }

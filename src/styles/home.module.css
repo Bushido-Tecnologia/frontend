@@ -172,6 +172,39 @@
     object-fit: contain;
 }
 
+/*
+    ===================================== INFORMATIVE SECTION =====================================
+*/
+
+.home__informative {
+    margin-top: 8em;
+    padding: 0 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.home__informative__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.home__informative__description__text {
+    font-size: var(--font-size-small);
+}
+
+.home__informative__inputs {
+    width: 100%;
+}
+
+.home__informative__inputs__text {
+    font-size: var(--font-size-small);
+    margin: 1em 0 .5em;
+}
+
 @media screen and (min-width: 767px) {
     /*
         ===================================== PARTNERS SECTION =====================================
@@ -186,6 +219,25 @@
         width: 15%;
         max-width: none;
         height: auto;
+    }
+
+    /*
+        ===================================== INFORMATIVE SECTION =====================================
+    */
+
+    .home__informative {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;   
+        gap: 5em;
+    }
+
+    .home__informative__description {
+        width: 45%;
+    }
+
+    .home__informative__inputs {
+        width: 40%;
     }
 }
 

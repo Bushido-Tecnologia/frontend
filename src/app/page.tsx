@@ -12,6 +12,7 @@ import partner5 from "../assets/img/partners/partners5.png"
 import { Button } from "@/components/Button"
 import { Title } from "@/components/Title"
 import { Mission } from "@/components/Mission"
+import { Input } from "@/components/Input"
 
 const Home = () => {
   return (
@@ -103,7 +104,32 @@ const Home = () => {
           <Image src={partner5} alt="" />
         </div>
       </div>
-      
+
+      <div className={home.home__informative}>
+        <div className={home.home__informative__description}>
+          <Title
+            text="Receba nossos informativos e boletins"
+            align="left"
+            margin="0"
+          />
+          <p className={home.home__informative__description__text}>
+            Se você se identifica com a nossa causa, cadastre-se e receba nossos boletins informativos, ou entre em contato através do email contato@institutobushido.org.br para ser um doador ou voluntário
+          </p>
+        </div>
+
+        <div className={home.home__informative__inputs}>
+          <div>
+            <h6 className={home.home__informative__inputs__text}>Seu nome:</h6>
+            <Input height="4.5em" />
+          </div>
+
+          <div>
+            <h6 className={home.home__informative__inputs__text}>Seu email:</h6>
+            <Input height="4.5em" />
+          </div>
+        </div>
+      </div>
+
     </main>
   )
 }

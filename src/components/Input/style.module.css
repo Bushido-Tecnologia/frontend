@@ -1,0 +1,11 @@
+.input {
+    background-color: var(--secondary-color);
+    
+    border-radius: var(--border-radius-large);
+    border: none;
+    outline: 0;
+
+    width: 100%;
+    max-width: 720px;
+    padding: 0 1.5em;
+}
