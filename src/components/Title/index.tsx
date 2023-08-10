@@ -1,7 +1,21 @@
-import title from "./style.module.css"
+import React from "react";
+import titleStyles from "./style.module.css";
 
-export const Title = ({ text }: { text: string }) => {
-    return (
-        <h2 className={title.title}>{text}</h2>
-    )
+type TextAlign = "left" | "right" | "center" | "justify" | "initial" | "inherit";
+
+interface TitleProps {
+    text: string;
+    align?: TextAlign;
+    margin?: string;
 }
+
+export const Title: React.FC<TitleProps> = ({ text, align, margin }) => {
+    return (
+        <h2
+            className={titleStyles.title}
+            style={{ textAlign: align || "center", margin: margin || "1.5em 0 .8em" }}
+        >
+            {text}
+        </h2>
+    );
+};
