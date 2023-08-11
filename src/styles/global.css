@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700;900&display=swap');
+
 *,
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fee8cf;
 }
 
 :root {
-    --primary-color: #BB733F;
+    --primary-color: #c77634;
     --secondary-color: #eeceb6;
     --font-size-very-large: 3.5rem;
     --font-size-large: 2.5rem;
@@ -19,7 +27,7 @@ body {
     --padding-button: 20px 35px;
 }
 
-    @media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) {
     :root {
         --font-size-very-large: 5rem;
         --font-size-large: 3.2rem;
