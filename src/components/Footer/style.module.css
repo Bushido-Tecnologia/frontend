@@ -18,8 +18,6 @@
 .footer__address {
     font-size: var(--font-size-small);
     text-align: center;
-
-    max-width: 25%;
 }
 
 .footer__phone {
@@ -33,4 +31,11 @@
     text-align: end;
 
     width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+    .footer__address {
+        width: 70%;
+        max-width: 40rem;
+    }
 }
