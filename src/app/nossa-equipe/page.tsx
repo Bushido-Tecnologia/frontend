@@ -4,6 +4,9 @@ import Image from "next/image"
 
 import initialImage from "../../assets/img/nossa-equipe/initial-section-image.png"
 
+import { Title } from "@/components/Title"
+import { Pearson } from "@/components/Pearson"
+
 const Index = () => {
     return (
         <main className={styles.ourTeam}>
@@ -17,8 +20,20 @@ const Index = () => {
                     <Image src={initialImage} alt="" />
                 </div>
             </div>
+
+            <Title text="Nossa Equipe" />
+            <div className={styles.ourTeam__content}>
+                <Pearson name="Luciano de Oliveira Alves" position="Presidente" rightToLeft={true} />
+                <Pearson name="Julian Del Piero" position="Secretário" rightToLeft={false} />
+                <Pearson name="Géssika Silva Campos" position="Tesoureira" rightToLeft={true} />
+                <Pearson name="Josebias Oliveira Alves" position="Topógrafo" rightToLeft={false} />
+                <Pearson name="Luiz Carlos de S. Neves" position="Músico" rightToLeft={true} />
+                <Pearson name="Ewerton José da Costa Jovelino" position="Músico" rightToLeft={false} />
+                <Pearson name="Rogério Alvarenga" position="Professor" rightToLeft={true} />
+                <Pearson name="Vitor de Carli " position="Monitor de karatê" rightToLeft={false} />
+            </div>
         </main>
     )
-}
+}   
 
 export default Index;
