@@ -13,6 +13,10 @@ body {
     background-color: #fee8cf;
 }
 
+main {
+    min-height: 70vh;
+}
+
 :root {
     --primary-color: #c77634;
     --secondary-color: #eeceb6;
