@@ -1,0 +1,35 @@
+.donate {
+    padding: 0 2em;
+}
+
+.donate__quotas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.quota__benefits__paragraf {
+    font-size: var(--font-size-small);
+    margin-top: .5em;
+}
+
+@media screen and (min-width: 767px) {
+    .donate__content_title {
+        display: block;
+
+        max-width: 900px;
+    }
+
+    .donate__quotas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .quota__benefits__paragraf {
+        max-width: 80%;
+        margin-left: 3%;
+    }
+}

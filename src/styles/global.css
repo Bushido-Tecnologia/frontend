@@ -16,6 +16,7 @@ body {
 :root {
     --primary-color: #c77634;
     --secondary-color: #eeceb6;
+    --tertiary-color: #d4ab8a;
     --font-size-very-large: 3.5rem;
     --font-size-large: 2.5rem;
     --font-size-medium: 2rem;
