@@ -1,3 +1,7 @@
+/*
+    ===================================== INITIAL SECTION =====================================
+*/
+
 .our_projects__init {
     display: flex;
     flex-direction: column;
@@ -22,18 +26,51 @@
     height: 100%;
 }
 
+/*
+    ===================================== PROJECTS SECTION =====================================
+*/
+
+.our_projects__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.our_projects__projects__image {
+    width: 300px;
+    height: 300px;
+}
+
 @media screen and (min-width: 1023px) {
+    /*
+        ===================================== INITIAL SECTION =====================================
+    */
+
     .our_projects__init {
         flex-direction: row;
-        align-items: start;    
+        align-items: start;
         justify-content: space-around;
     }
-    
+
     .our_projects__init__content {
         width: 45%;
     }
 
     .our_projects__init__content__text {
         max-width: 700px;
+    }
+
+    /*
+        ===================================== PROJECTS SECTION =====================================
+    */
+
+    .our_projects__projects {
+        gap: 1em;
+    }
+
+    .our_projects__projects__image {
+        width: 15%;
+        height: auto;
     }
 }
