@@ -1,4 +1,4 @@
-import styles from "../../styles/doe.module.css"
+import styles from "../../styles/donate.module.css"
 
 import { Title } from "@/components/Title"
 import { Quota } from "@/components/Quota"
@@ -10,7 +10,7 @@ import imageDonate4 from "../../assets/img/donate/image-4.png"
 
 const Index = () => {
     return (
-        <div className={styles.donate}>
+        <main className={styles.donate}>
             <span className={styles.donate__content_title}>
                 <Title
                     text="Cotas sugeridas para empresas e contrapartidas"
@@ -68,7 +68,7 @@ const Index = () => {
                     Os resultados e conquistas do instituto também são seus.
                 </p>
             </div>
-        </div>
+        </main>
     )
 }
 

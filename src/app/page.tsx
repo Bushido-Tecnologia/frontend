@@ -16,7 +16,7 @@ import { Input } from "@/components/Input"
 
 const Home = () => {
   return (
-    <main className={home.home}>
+    <main className={home.home} style={{ marginTop: 0 }}>
       <div className={home.home__init}>
         <Image
           className={home.home__init__banner}
