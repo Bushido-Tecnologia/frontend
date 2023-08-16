@@ -1,0 +1,28 @@
+.payment {
+    background-color: var(--tertiary-color);
+    
+    border-radius: var(--border-radius-medium);
+    
+    padding: 1em;
+
+    width: 100%;
+    max-width: 400px;
+}
+
+.payment__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 767px) {
+    .payment {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .payment {
+        width: 18%;
+    }
+}

@@ -2,11 +2,24 @@ import styles from "../../styles/donate.module.css"
 
 import { Title } from "@/components/Title"
 import { Quota } from "@/components/Quota"
+import { PaymentOption } from "@/components/PaymentOption"
+import { QuotaDonation } from "@/components/QuotaDonation"
 
 import imageDonate1 from "../../assets/img/donate/image-1.png"
 import imageDonate2 from "../../assets/img/donate/image-2.png"
 import imageDonate3 from "../../assets/img/donate/image-3.png"
 import imageDonate4 from "../../assets/img/donate/image-4.png"
+
+import pixImage from "../../assets/img/donate/payment-options/pix.png"
+import cardImage from "../../assets/img/donate/payment-options/card.png"
+import bankImage from "../../assets/img/donate/payment-options/bank.png"
+import paypalImage from "../../assets/img/donate/payment-options/paypal.png"
+import picpayImage from "../../assets/img/donate/payment-options/picpay.png"
+
+import foodImage from "../../assets/img/donate/quota-donation/food.png"
+import studentImage from "../../assets/img/donate/quota-donation/student.png"
+import transportImage from "../../assets/img/donate/quota-donation/transport.png"
+import uniformImage from "../../assets/img/donate/quota-donation/uniform.png"
 
 const Index = () => {
     return (
@@ -67,6 +80,23 @@ const Index = () => {
                 <p className={styles.quota__benefits__paragraf}>
                     Os resultados e conquistas do instituto também são seus.
                 </p>
+            </div>
+
+            <Title text="Opções de pagamento" align="left" />
+            <div className={styles.donate__payment_options}>
+                <PaymentOption image={pixImage} />
+                <PaymentOption image={cardImage} />
+                <PaymentOption image={bankImage} />
+                <PaymentOption image={paypalImage} />
+                <PaymentOption image={picpayImage} />
+            </div>
+
+            <Title text="Cotas de doação" />
+            <div className={styles.donate__quota_donations}>
+                <QuotaDonation image={foodImage} info="Alimentação" description="R$ 100,00/mês" />
+                <QuotaDonation image={transportImage} info="Transporte" description="R$ 150,00/mês" />
+                <QuotaDonation image={studentImage} info="Um aluno" description="R$ 400,00/mês" />
+                <QuotaDonation image={uniformImage} info="Uniforme e materiais de segurança" description="R$ 700,00/mês" />
             </div>
         </main>
     )
