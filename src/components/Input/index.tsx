@@ -1,11 +1,20 @@
 import styles from "./style.module.css"
 
-export const Input = ({ width, height }: { width?: string, height?: string }) => {
+interface Props {
+    width?: string;
+    height?: string;
+    text: string;
+}
+
+export const Input: React.FC<Props> = ({ width, height, text }) => {
     return (
-        <input
-            className={styles.input}
-            type="text"
-            style={{ width: width || "100%", height: height || "2.5em" }}
-        />
+        <div className={styles.content}>
+            <span className={styles.content__text}>{text}</span>
+            <input
+                className={styles.content__input}
+                type="text"
+                style={{ width: width || "100%", height: height || "2.5em" }}
+            />
+        </div>
     )
 }
