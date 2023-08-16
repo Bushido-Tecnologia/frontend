@@ -118,15 +118,9 @@ const Home = () => {
         </div>
 
         <div className={home.home__informative__inputs}>
-          <div>
-            <h6 className={home.home__informative__inputs__text}>Seu nome:</h6>
-            <Input height="4.5em" />
-          </div>
+            <Input text="Seu nome:" height="4.5em" />
 
-          <div>
-            <h6 className={home.home__informative__inputs__text}>Seu email:</h6>
-            <Input height="4.5em" />
-          </div>
+            <Input text="Seu email:" height="4.5em" />
         </div>
       </div>
 
