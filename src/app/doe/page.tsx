@@ -1,5 +1,7 @@
 import styles from "../../styles/donate.module.css"
 
+import Image from "next/image"
+
 import { Title } from "@/components/Title"
 import { Quota } from "@/components/Quota"
 import { PaymentOption } from "@/components/PaymentOption"
@@ -20,6 +22,9 @@ import foodImage from "../../assets/img/donate/quota-donation/food.png"
 import studentImage from "../../assets/img/donate/quota-donation/student.png"
 import transportImage from "../../assets/img/donate/quota-donation/transport.png"
 import uniformImage from "../../assets/img/donate/quota-donation/uniform.png"
+
+import stamps1 from "../../assets/img/donate/stamps/stamps1.png"
+import stamps2 from "../../assets/img/donate/stamps/stamps2.png"
 
 const Index = () => {
     return (
@@ -97,6 +102,13 @@ const Index = () => {
                 <QuotaDonation image={transportImage} info="Transporte" description="R$ 150,00/mês" />
                 <QuotaDonation image={studentImage} info="Um aluno" description="R$ 400,00/mês" />
                 <QuotaDonation image={uniformImage} info="Uniforme e materiais de segurança" description="R$ 700,00/mês" />
+            </div>
+
+            <span className={styles.donate__link}>Caso tenha alguma dúvida, nos contate na página de <a href="/contato">contato</a></span>
+
+            <div className={styles.donate__stamps}>
+                <Image className={styles.donate__stamps__image} src={stamps1} alt="" />
+                <Image className={styles.donate__stamps__image} src={stamps2} alt="" />
             </div>
         </main>
     )
