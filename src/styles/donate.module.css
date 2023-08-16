@@ -34,7 +34,7 @@
 }
 
 /*
-===================================== QUOTA DONATION SECTION =====================================
+    ===================================== QUOTA DONATION SECTION =====================================
 */
 
 .donate__quota_donations {
@@ -42,6 +42,40 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5em;
+}
+
+/*
+    ===================================== STAMPS SECTION =====================================
+*/
+
+.donate__link {
+    display: block;
+
+    margin-top: 3em;
+
+    width: 100%;
+
+    text-align: center;
+    font-size: var(--font-size-small);
+}
+
+.donate__link a {
+    color: var(--primary-color);
+}
+
+.donate__stamps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+    margin-top: 5em;
+}
+
+.donate__stamps__image {
+    width: 15rem;
+    height: auto;
 }
 
 @media screen and (min-width: 767px) {
@@ -65,10 +99,18 @@
     /*
         ===================================== BENEFITS SECTION =====================================
     */
-    
+
     .quota__benefits__paragraf {
         max-width: 80%;
         margin-left: 3%;
+    }
+
+    /*
+        ===================================== BENEFITS SECTION =====================================
+    */
+
+    .donate__stamps {
+        gap: 10em;
     }
 }
 
