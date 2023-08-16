@@ -57,7 +57,7 @@ export const Header = () => {
                     </li>
 
                     <li className={styles.header__nav__link}>
-                        <a href="/Contato">Contato</a>
+                        <a href="/contato">Contato</a>
                     </li>
 
                     <li className={styles.header__nav__link}>

@@ -1,11 +1,22 @@
-.input {
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__input {
     background-color: var(--secondary-color);
     
     border-radius: var(--border-radius-large);
     border: none;
     outline: 0;
 
-    width: 100%;
-    max-width: 720px;
-    padding: 0 1.5em;
+    padding: 0 1.5em;   
+}
+
+.content__text {
+    color: var(--primary-color);
+    font-size: var(--font-size-small);
+    font-weight: bold;
+
+    margin-bottom: .5em;
 }

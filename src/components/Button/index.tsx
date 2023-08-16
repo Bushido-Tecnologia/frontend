@@ -1,9 +1,19 @@
 import style from "./style.module.css"
 
-export const Button = ({ text, gradient }: { text: string, gradient?: boolean }) => {
+interface Props {
+    text: string;
+    gradient: boolean;
+    center?: boolean
+}
+
+export const Button: React.FC<Props> = ({ text, gradient, center }) => {
     return (
-        <button className={gradient ? style.buttonTransparent : style.button}>
-            {text}
-        </button>
+        <span className={style.content} style={{ width: center ? "100%" : "min-content" }}>
+            <button
+                className={gradient ? style.buttonTransparent : style.button}
+                style={{ margin: center ? "0 auto" : "1em 0" }}>
+                {text}
+            </button>
+        </span>
     )
 }
