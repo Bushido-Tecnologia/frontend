@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     
     width: 95%;
+    min-height: 35rem;
     
     border-radius: var(--border-radius-medium);
 
@@ -28,6 +29,8 @@
 .report__image {
     width: 100%;
     max-height: 400px;
+
+    cursor: pointer;
 }
 
 .report__image img {
