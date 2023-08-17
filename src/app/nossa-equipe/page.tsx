@@ -26,7 +26,7 @@ const Index = () => {
                 <Pearson name="Luciano de Oliveira Alves" position="Presidente" rightToLeft={true} />
                 <Pearson name="Julian Del Piero" position="Secretário" rightToLeft={false} />
                 <Pearson name="Géssika Silva Campos" position="Tesoureira" rightToLeft={true} />
-                <Pearson name="Josebias Oliveira Alves" position="Topógrafo" rightToLeft={false} />
+                <Pearson name="Josebias Oliveira Alves" position="Conselho Fiscal " rightToLeft={false} />
                 <Pearson name="Luiz Carlos de S. Neves" position="Músico" rightToLeft={true} />
                 <Pearson name="Ewerton José da Costa Jovelino" position="Músico" rightToLeft={false} />
                 <Pearson name="Rogério Alvarenga" position="Professor" rightToLeft={true} />
